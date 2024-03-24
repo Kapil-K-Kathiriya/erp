@@ -32,6 +32,10 @@ const OrdersManagement: React.FC = () => {
           <Button type="primary" onClick={() => handleViewDetails(record)}>
             View Details
           </Button>
+          <Button type="primary" style={{ marginLeft: "10px" }} danger onClick={() => handleDelete(record.id)}>
+            Delete
+          </Button>
+
         </div>
       ),
     },
@@ -57,6 +61,11 @@ const OrdersManagement: React.FC = () => {
   const handleViewDetails = (record: Order) => {
     setSelectedOrder(record);
     setIsModalVisible(true);
+  };
+  const handleDelete = (orderId: number) => {
+    const updatedOrders = orders.filter(order => order.id !== orderId);
+    setOrders(updatedOrders);
+    message.success("Order deleted successfully!");
   };
   const handleViewDetailsDate = (record: Order) => {
     Modal.info({
