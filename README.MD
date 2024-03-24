@@ -1,5 +1,3 @@
-Certainly! Below is a more detailed README file for the ERP system:
-
 ---
 
 # Enterprise Resource Planning (ERP) System
