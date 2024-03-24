@@ -1,5 +1,3 @@
----
-
 # Enterprise Resource Planning (ERP) System
 
 Welcome to the ERP System, a comprehensive tool designed to streamline and manage various aspects of your business operations efficiently. This system comprises several key features accessible through different pages, each serving a specific purpose. Let's delve into the details of each page:
